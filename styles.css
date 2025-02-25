@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #212529 !important;
+}
+
+.navbar a.nav-link {
+    text-decoration: none;
+    color: white !important;
+}
+
+.navbar a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Transition Effects for Welcome Section */
+.welcome-container h1,
+.welcome-container p {
+    opacity: 0; /* Initially hide the elements */
+    transform: translateY(20px); /* Initially position them below */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+   
+}
+
+.welcome-container.show h1,
+.welcome-container.show p {
+    opacity: 1; /* Show the elements */
+    transform: translateY(0); /* Bring them back to their original position */
+}
+
+/* Form styling */
+form {
+    margin-top: 50px;
+}
+
+/* Center the form inputs and button */
+form .row {
+    justify-content: center;
+}
+
+/* Button styling */
+.btn-block {
+    padding: 10px;
+    font-size: 16px;
+}
